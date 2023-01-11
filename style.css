@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+/* warna */
+:root{
+    --darkblue :#101C45;
+    --darkblue2 : #203271;
+    --white : white;
+    --black : black;
+}
+
+/* format */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: white;
+}
+
+/* header start */
+body > header{
+    padding: 4% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation{
+    display: flex;
+    font-family: 'Source Sans Pro';
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-right: 5rem;
+}
+
+.brand > img{
+    height: 25px;
+    margin-right: 10px;
+}
+
+.brand > h1 {
+    font-size: 1.1rem;
+    color: var(--darkblue);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+nav > li > a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black);
+}
+
+nav > li > a:hover{
+    font-weight: 600;
+    color: var(--darkblue);
+}
+
+.masuk{
+    font-family: 'DM Sans';
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.login{
+    color: var(--darkblue);
+    padding: .5rem 1.5rem;
+    margin-right: 1rem ;
+}
+
+.book{
+    color: var(--darkblue);
+    padding: .5rem 1.5rem;
+    border: 1px solid;
+}
+
+/* header end */
+
+/* main start */
+body > main{
+    padding: 8% 10%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* text main */
+.text-main{
+    font-family: 'DM Sans';
+    width: 40%;
+    align-items: center;
+}
+
+.text-main > h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--darkblue);
+}
+
+.text-main > p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--darkblue);
+    line-height: 2;
+}
+
+.text-main > a{
+    font-family: 'Source Sans Pro';
+    color: var(--white);
+    background-color: var(--darkblue2);
+    padding: 1rem 2rem;
+    display: block;
+    width: 50%;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+/* img main */
+.img-main > .rectangle{
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+}
+
+.img-main > .orang {
+    position: relative;
+    bottom: 180px;
+    left: 30px;
+}
+
+/* aside */
+aside {
+    position: absolute;
+    top: 200px;
+    right: 500px;
+    font-family: 'Source Sans Pro';
+    background-color: var(--white);
+    padding: 1.5rem;
+    width: 22%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+}
+
+aside > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+aside > header > .profil{
+    display: flex;
+    align-items: center;
+    gap: 1rem ;
+}
+
+aside > header > .profil >.name{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+aside > main > p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* features */
+.features {
+    display: flex;
+    background-color: var(--darkblue2);
+    padding: 2rem;
+    color: var(--white);
+    font-family: 'DM Sans';
+    gap: 1.5rem;
+    position: absolute;
+    width: 80%;
+    top: 855px;
+}
+
+.features > div{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.features > div > .features-text > h3{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.features > div > .features-text > p{
+    color: rgba(255, 255, 255, .8);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+/* main end */
